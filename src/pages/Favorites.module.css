@@ -1,0 +1,192 @@
+.section {
+  padding: 2rem 1.25rem 4rem;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.emptyText {
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  font-size: 1.0625rem;
+}
+
+.emptyLink {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.emptyLink:hover {
+  background: var(--color-accent-hover);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.group {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.groupTitle {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  background: #f0ebe5;
+  color: var(--color-accent-hover);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.itemInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.itemName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.125rem;
+}
+
+.itemPrice {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.itemUnit {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.removeBtn {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 1.25rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.removeBtn:hover {
+  background: #f5e6e6;
+  color: #c44;
+}
+
+.totalBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: var(--color-bg-alt);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.totalLabel {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.totalValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.clearBtn {
+  display: block;
+  width: 100%;
+  padding: 0.625rem;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 2rem;
+}
+
+.clearBtn:hover {
+  background: #fdf2f2;
+  color: #c44;
+  border-color: #e8c8c8;
+}
+
+.contacts {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.contactsTitle {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.contactLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: var(--color-accent);
+  color: white;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.contactLink:hover {
+  background: var(--color-accent-hover);
+}

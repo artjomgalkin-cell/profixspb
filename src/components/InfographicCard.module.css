@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(139, 115, 85, 0.1);
   border-radius: var(--radius-sm);
   color: var(--color-accent);
 }

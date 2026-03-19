@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useFavorites } from '../context/FavoritesContext'
 import styles from './Header.module.css'
 
 const navItems = [
   { path: '/', label: 'Главная' },
   { path: '/services', label: 'Услуги' },
-  { path: '/contacts', label: 'Контакты' },
 ]
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  const { count } = useFavorites()
 
   const closeMenu = () => setMenuOpen(false)
 
@@ -18,7 +19,7 @@ export default function Header() {
     <header className={`${styles.header} ${menuOpen ? styles.menuOpen : ''}`}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo} onClick={closeMenu}>
-          Сборка мебели
+          ProFixSPb
         </Link>
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
           {navItems.map(({ path, label }) => (
@@ -31,6 +32,14 @@ export default function Header() {
               {label}
             </Link>
           ))}
+          <Link
+            to="/favorites"
+            className={`${styles.link} ${styles.favLink} ${location.pathname === '/favorites' ? styles.linkActive : ''}`}
+            onClick={closeMenu}
+          >
+            Избранное
+            {count > 0 && <span className={styles.badge}>{count}</span>}
+          </Link>
         </nav>
         <button
           type="button"

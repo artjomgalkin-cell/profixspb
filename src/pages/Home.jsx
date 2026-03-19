@@ -31,7 +31,7 @@ const advantages = [
   {
     icon: icons.clock,
     title: 'Быстро',
-    description: 'Соберём мебель в день заказа или в удобное для вас время.',
+    description: 'Соберём мебель в день обращения или в удобное для вас время.',
   },
   {
     icon: icons.shield,
@@ -46,7 +46,7 @@ const advantages = [
   {
     icon: icons.user,
     title: 'Опытные мастера',
-    description: 'Собираем мебель любой сложности: ИКЕА, Леруа и другие.',
+    description: 'Собираем мебель любой сложности: ИКЕА, Леруа Мерлен и другие.',
   },
 ]
 
@@ -55,19 +55,19 @@ export default function Home() {
     <>
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Профессиональная сборка мебели</h1>
+          <h1 className={styles.heroTitle}>Профессиональная сборка мебели в СПб</h1>
           <p className={styles.heroSubtitle}>
-            Соберём вашу мебель быстро, качественно и с гарантией. Оставьте заявку — перезвоним в течение часа.
+            Узнайте стоимость сборки прямо сейчас — выберите нужные услуги и рассчитайте итоговую цену.
           </p>
-          <Link to="/contacts" className={styles.cta}>
-            Оставить заявку
+          <Link to="/services" className={styles.cta}>
+            Рассчитать стоимость
           </Link>
         </div>
       </section>
 
       <section className={styles.advantages}>
         <div className={styles.sectionContainer}>
-          <h2 className={styles.sectionTitle}>Почему мы</h2>
+          <h2 className={styles.sectionTitle}>Почему выбирают нас</h2>
           <div className={styles.cards}>
             {advantages.map((item) => (
               <InfographicCard key={item.title} {...item} />
@@ -78,16 +78,11 @@ export default function Home() {
 
       <section className={styles.ctaBlock}>
         <div className={styles.sectionContainer}>
-          <h2 className={styles.ctaTitle}>Готовы заказать сборку?</h2>
-          <p className={styles.ctaText}>Узнайте цены и оставьте заявку</p>
-          <div className={styles.ctaButtons}>
-            <Link to="/services" className={styles.btnSecondary}>
-              Услуги и цены
-            </Link>
-            <Link to="/contacts" className={styles.btnPrimary}>
-              Связаться
-            </Link>
-          </div>
+          <h2 className={styles.ctaTitle}>Хотите узнать стоимость?</h2>
+          <p className={styles.ctaText}>Выберите нужные услуги из каталога и посмотрите итоговую цену</p>
+          <Link to="/services" className={styles.btnPrimary}>
+            Посмотреть цены
+          </Link>
         </div>
       </section>
     </>

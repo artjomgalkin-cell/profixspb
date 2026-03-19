@@ -7,18 +7,19 @@
 }
 
 :root {
-  --color-accent: #2563eb;
-  --color-accent-hover: #1d4ed8;
-  --color-bg: #f8fafc;
+  --color-accent: #8B7355;
+  --color-accent-hover: #6F5B3E;
+  --color-bg: #FAF8F5;
   --color-bg-alt: #ffffff;
-  --color-text: #1e293b;
-  --color-text-muted: #64748b;
-  --color-border: #e2e8f0;
+  --color-text: #3D3329;
+  --color-text-muted: #8C7E73;
+  --color-border: #E8E0D8;
+  --color-warm: #C4A882;
   --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --radius: 12px;
   --radius-sm: 8px;
-  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
   --max-width: 1100px;
 }
 

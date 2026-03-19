@@ -1,7 +1,7 @@
 .footer {
   margin-top: auto;
-  background: var(--color-text);
-  color: #cbd5e1;
+  background: #3D3329;
+  color: #c4b8ac;
 }
 
 .container {
@@ -30,7 +30,7 @@
 }
 
 .nav a {
-  color: #94a3b8;
+  color: #a89888;
   transition: color 0.2s;
 }
 
@@ -38,9 +38,14 @@
   color: white;
 }
 
-.copy {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
+.phone {
+  color: var(--color-warm);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.phone:hover {
+  color: white;
 }
 
 @media (min-width: 768px) {

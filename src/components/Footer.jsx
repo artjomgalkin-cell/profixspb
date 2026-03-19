@@ -6,13 +6,13 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <p className={styles.logo}>Сборка мебели</p>
+          <p className={styles.logo}>ProFixSPb</p>
           <nav className={styles.nav}>
             <Link to="/">Главная</Link>
             <Link to="/services">Услуги</Link>
-            <Link to="/contacts">Контакты</Link>
+            <Link to="/favorites">Избранное</Link>
           </nav>
-          <p className={styles.copy}>© {new Date().getFullYear()} Сборка мебели</p>
+          <a href="tel:+79112689472" className={styles.phone}>8 (911) 268-94-72</a>
         </div>
       </div>
     </footer>
