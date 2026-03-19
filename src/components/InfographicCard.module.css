@@ -1,0 +1,35 @@
+.card {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: var(--radius-sm);
+  color: var(--color-accent);
+}
+
+.title {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
