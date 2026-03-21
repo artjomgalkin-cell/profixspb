@@ -1,7 +1,7 @@
 .icon {
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 84px;
+  height: 84px;
   object-fit: contain;
   opacity: 0.65;
   transition: opacity 0.2s, transform 0.2s, filter 0.2s;
@@ -9,6 +9,6 @@
 
 .iconActive {
   opacity: 1;
-  transform: scale(1.06);
+  transform: scale(1.03);
   filter: drop-shadow(0 1px 3px rgba(61, 51, 41, 0.35));
 }

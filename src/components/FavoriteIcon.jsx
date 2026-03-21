@@ -9,8 +9,8 @@ export default function FavoriteIcon({ active }) {
     <img
       src={favHeart}
       alt=""
-      width={28}
-      height={28}
+      width={84}
+      height={84}
       className={`${styles.icon} ${active ? styles.iconActive : ''}`}
       aria-hidden
     />
