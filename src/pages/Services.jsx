@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CATEGORIES, getServicesByCategory } from '../data/services'
 import { useFavorites } from '../context/FavoritesContext'
-import ScrewdriverIcon from '../components/ScrewdriverIcon'
+import FavoriteIcon from '../components/FavoriteIcon'
 import styles from './Services.module.css'
 
 export default function Services() {
@@ -51,7 +51,7 @@ export default function Services() {
                   onClick={() => toggle(svc.id)}
                   aria-label={active ? 'Убрать из избранного' : 'Добавить в избранное'}
                 >
-                  <ScrewdriverIcon active={active} size={22} />
+                  <FavoriteIcon active={active} />
                 </button>
               </div>
             )

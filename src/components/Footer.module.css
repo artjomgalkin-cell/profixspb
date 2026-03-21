@@ -7,14 +7,17 @@
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2rem 1.25rem;
+  padding: 2rem 1.25rem 1.5rem;
 }
 
-.content {
+.top {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  gap: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.brand {
   text-align: center;
 }
 
@@ -22,11 +25,14 @@
   font-weight: 700;
   font-size: 1.125rem;
   color: white;
+  margin-bottom: 0.75rem;
 }
 
 .nav {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  justify-content: center;
 }
 
 .nav a {
@@ -38,19 +44,77 @@
   color: white;
 }
 
-.phone {
-  color: var(--color-warm);
-  font-weight: 600;
-  transition: color 0.2s;
+.contacts {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.phone:hover {
+.contactsTitle {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8a7a6a;
+  margin-bottom: 0.75rem;
+}
+
+.contactRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  color: var(--color-warm);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contactLink:hover {
+  background: rgba(255, 255, 255, 0.12);
   color: white;
 }
 
+.copy {
+  font-size: 0.75rem;
+  color: #6d5f52;
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 @media (min-width: 768px) {
-  .content {
+  .top {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .brand {
+    text-align: left;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+
+  .contacts {
+    text-align: right;
+    padding-top: 0;
+    border-top: none;
+    max-width: 420px;
+  }
+
+  .contactRow {
+    justify-content: flex-end;
   }
 }
